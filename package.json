@@ -1,0 +1,11 @@
+{
+  "name": "do-not-buy-token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kasun Kodagoda <kvkrusl@gmail.com>",
+  "license": "MIT"
+}
