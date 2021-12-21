@@ -41,7 +41,7 @@ contract DoNotBuyToken is Context, AccessControlEnumerable, ERC20Burnable, ERC20
      */
     function mint(address to, uint256 amount) public {
         require(hasRole(MINTER_ROLE, _msgSender()), "ERC20PresetMinterPauser: must have minter role to mint");
-				require(ERC20.totalSupply() + amount <= tokenCap, "ERC20Capped: cap exceeded");
+				require(totalSupply() + amount <= tokenCap, "ERC20Capped: cap exceeded");
 
         _mint(to, amount);
     }
